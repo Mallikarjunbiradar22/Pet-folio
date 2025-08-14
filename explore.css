@@ -1,0 +1,153 @@
+/* CSS for Explore Page - explore.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9e6;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background: #ebe38a;
+    color: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  header nav ul li {
+    display: inline;
+  }
+  
+  header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a.active,
+  header nav ul li a:hover {
+    color: #c5b45f;
+  }
+  
+  /* Explore Section */
+  section.explore {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-bottom: 5px solid #ebe38a;
+  }
+  
+  section.explore h1 {
+    color: #333;
+    font-size: 36px;
+  }
+  
+  section.explore p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .explore-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .explore-content .card {
+    background-color: #ffffff;
+    border: 2px solid #ebe38a;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .explore-content .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .explore-content .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .explore-content .card h2 {
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .explore-content .card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Call-to-Action Button */
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ebe38a;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #c5b45f;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  footer .social-icons a {
+    color: #ebe38a;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  footer .social-icons a:hover {
+    color: #c5b45f;
+  }
+  .famous-pet-lovers .card img {
+    width: 500px; /* Make the image take the full width of the card */
+    height: 200px; /* Set a consistent height */
+    object-fit: cover; /* Ensures the image is cropped proportionally */
+    border-radius: 10px; /* Matches the card's styling */
+}

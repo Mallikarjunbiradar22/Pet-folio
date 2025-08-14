@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Community</title>
+  <link rel="stylesheet" href="communityy.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Pet-Folio Community</div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <h1>Join the Pet-Folio Community</h1>
+      <p>We’re excited to welcome you! Register as a Breeder or Volunteer to rescue and support our furry friends.</p>
+      <form action="community.php" method="POST" class="registration-form">
+        <!-- Personal Details -->
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+          <label for="mobile">Mobile Number:</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+        </fieldset>
+
+        <!-- Experience -->
+        <fieldset>
+          <legend>Your Experience</legend>
+          <label for="experience">Share your first experience with rescuing or breeding dogs:</label>
+          <textarea id="experience" name="experience" rows="4" placeholder="Write about your first experience..." required></textarea>
+        </fieldset>
+
+        <!-- Role Selection -->
+        <fieldset>
+          <legend>Select Your Role</legend>
+          <div class="radio-group">
+            <label for="breeder">
+              <input type="radio" id="breeder" name="role" value="Breeder" required>
+              owner
+            </label>
+            <label for="volunteer">
+              <input type="radio" id="volunteer" name="role" value="Volunteer" required>
+              Volunteer
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Pet-Folio. All rights reserved.</p>
+  </footer>
+
+  <script src="community.js"></script>
+</body>
+</html>

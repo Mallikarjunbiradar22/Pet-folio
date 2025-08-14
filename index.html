@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Folio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo"> Pet-Folio <pre> <span><img src="logo1.png" alt="Custom Image" style="width: 70px; height: 45px;"></span></pre></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li> <!-- Link to the About Page -->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login / Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to PET-FOLIO</h1>
+        <p>Your one-stop destination for adopting your perfect dog!</p>
+        <div class="cta-buttons">
+            <button onclick="explorePets()">Explore More</button>
+            <button onclick="joinCommunity()">Join the Community</button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Find Your Companion</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="dogs.jpeg" alt="Dogs">
+                <h3>Dogs</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Pets Section -->
+    <section class="featured">
+        <h2>Featured Dogs</h2>
+        <div class="pet-carousel">
+            <div class="pet">
+                <a href="https://en.wikipedia.org/wiki/Free-ranging_dog"><img src="dog1.jpeg" alt="Dog 1"></a> 
+                <p>Stray Dogs</p>
+            </div>
+            <div class="pet">
+                <a href="https://en.wikipedia.org/wiki/Pet"><img src="dog2.jpg" alt="Dog 2"></a>
+                <p>Pet Dogs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pet-Folio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="pet1.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Pets - Pet-Folio</title>
+    <link rel="stylesheet" href="explore1.css">
+</head>
+<body>
+    <!-- Header -->
+    <?php
+    session_start();
+    if (!isset($_SESSION['user_id'])) {
+        header("Location: login.html"); // Redirect to login page if not logged in
+        exit();
+    }
+    ?>
+    <header>
+        <div class="logo">
+            Pet-Folio 
+            <pre><span><img src="logo1.png" alt="Custom Image" style="width: 70px; height: 45px;"></span></pre>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index1.php">Home</a></li>
+                <li><a href="about1.php">About</a></li>
+                <li><a href="contact1.php">Contact</a></li>
+                <li class="profile">
+                    <button class="profile-btn">Profile</button>
+                    <div class="profile-menu">
+                       <p><strong>Email:</strong> <?php echo $_SESSION['user_email'] ?? 'Not available'; ?></p>
+                       <a href="logout.php" class="logout-btn">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Explore Section -->
+    <section id="explore" class="explore">
+        <h1>Explore the World of Pets</h1>
+        <p>Discover the joy of bringing a pet into your life. Learn about the importance of adoption, proper care, and how you can make a difference.</p>
+
+        <div class="explore-content">
+            <div class="card">
+                <a href="display_dog1.php"><img src="adopt.jpg" alt="Dog Adoption"></a>
+                <h2>Adopt a Dog</h2>
+                <p>Every dog deserves a loving home. Discover the stories of rescued dogs and find your perfect companion today.</p>
+            </div>
+
+            <div class="card">
+                <a href="communitylogin1.html"><img src="_com1.jpg" alt="Community"></a>
+                <h2>Join Our Community</h2>
+                <p>Be part of a growing community of pet lovers who share their experiences and support each other.</p>
+            </div>
+        </div>
+
+        <h2>Interesting Pet Facts</h2>
+        <ul>
+            <li>Did you know that dogs can understand up to 250 words and gestures?</li>
+            <li>Cats spend approximately 70% of their lives sleeping!</li>
+            <li>Having a pet can reduce stress levels and increase feelings of happiness and companionship.</li>
+        </ul>
+
+        <h2>Accidents Involving Pets</h2>
+        <p>It is crucial to ensure pet safety to prevent accidents such as ingestion of harmful substances, road mishaps, or injuries caused by inadequate care. Educating ourselves and others can save countless lives.</p>
+
+        <h2>Advantages of Having a Pet</h2>
+        <p>Pets bring immense joy and companionship to our lives. Here are a few examples:</p>
+        <ul>
+            <li>Pets encourage a healthier lifestyle by promoting daily exercise, such as walking a dog.</li>
+            <li>Children who grow up with pets develop a sense of responsibility and empathy.</li>
+            <li>Pets can serve as emotional support animals, offering comfort during challenging times.</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pet-Folio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="explore1.js"></script>
+</body>
+</html>

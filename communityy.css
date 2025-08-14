@@ -1,0 +1,137 @@
+community.css
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FDF6E3;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #4DB6AC;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* Main Content Area */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+/* Form Container */
+.container {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px 25px;
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #B2DFDB;
+}
+
+/* Heading and Subtitle */
+h1 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Style the form */
+form {
+  width: 100%;
+}
+
+/* Fieldsets */
+fieldset {
+  border: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+/* Labels and Inputs */
+label {
+  margin-bottom: 5px;
+  font-size: 0.95em;
+  color: #555;
+  display: block;
+}
+
+input,
+textarea {
+  margin: 5px 0 15px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #B2DFDB;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+/* Radio Button Group */
+.radio-group {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  gap: 20px; /* Space between radio buttons */
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em; /* Adjusted font size for better clarity */
+  color: #555;
+  margin-right: 10px; /* Added spacing between the radio button and text */
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px; /* Space between radio button and text */
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #EF9A9A;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #E57373;
+}
+
+/* Footer */
+footer {
+  background-color: #4DB6AC;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
