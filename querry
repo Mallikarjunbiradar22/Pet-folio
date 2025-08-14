@@ -1,0 +1,29 @@
+CREATE TABLE stray_dogs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    age INT,
+    gender ENUM('Male', 'Female') NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    description TEXT,
+    photo_path VARCHAR(255) NOT NULL,
+    uploaded_by INT NOT NULL,
+    uploaded_by_role ENUM('volunteer', 'donor') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE signup (
+    id INT AUTO_INCREMENT PRIMARY KEY,      -- Unique ID for each user
+    name VARCHAR(255) NOT NULL,             -- First name
+    lname VARCHAR(255) NOT NULL,            -- Last name
+    mail VARCHAR(255) NOT NULL UNIQUE,      -- Email (unique for each user)
+    phone VARCHAR(20) NOT NULL UNIQUE,      -- Mobile number (unique for each user)
+    password VARCHAR(255) NOT NULL,         -- Hashed password
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Record creation timestamp
+);
+CREATE TABLE community_member ( id INT AUTO_INCREMENT PRIMARY KEY, 
+-- Auto-incremented ID for each member name VARCHAR(255) NOT NULL,
+-- Full name of the user email VARCHAR(255) NOT NULL UNIQUE, 
+-- Email address, must be unique password VARCHAR(255) NOT NULL, 
+-- Password for the user (hashed) address TEXT NOT NULL,
+-- Address of the user mobile VARCHAR(20) NOT NULL UNIQUE, 
+-- Mobile number, must be unique experience TEXT NOT NULL, 
+-- User's experience with rescuing or breeding dogs role ENUM('volunteer', 'owner') NOT NULL -- Role (Admin, User, or Moderator) );
